@@ -35,7 +35,7 @@ namespace Lab_01_exceptionHandling
                 Console.WriteLine($"Your array size is {array.Length}");
                 Console.WriteLine("Your numbers in the array are [{0}]", string.Join(", ", arr));
                 Console.WriteLine($"Your sum of the array is {sum}");
-                Console.WriteLine($"{sum} * {arr[4]} = {product}");
+                Console.WriteLine($"{sum} * {product / sum} = {product}");
                 Console.WriteLine($"{product} / {product / quotient} = {quotient}");
                 Console.WriteLine($"Program is complete");
             }
