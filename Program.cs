@@ -35,7 +35,8 @@ namespace Lab_01_exceptionHandling
                 Console.WriteLine($"Your array size is {array.Length}");
                 Console.WriteLine("Your numbers in the array are [{0}]", string.Join(", ", arr));
                 Console.WriteLine($"Your sum of the array is {sum}");
-                Console.WriteLine($"Product is {quotient}");
+                Console.WriteLine($"{sum} * {arr[4]} = {product}");
+                Console.WriteLine($"{product} / {product / quotient} = {quotient}");
                 Console.WriteLine($"Program is complete");
             }
             catch (FormatException e)
@@ -84,7 +85,7 @@ namespace Lab_01_exceptionHandling
                 string userInput = Console.ReadLine();
                 int convertedInput = Convert.ToInt32(userInput);
 
-                var product = sum * productArr[convertedInput];
+                var product = sum * productArr[convertedInput - 1];
 
                 return product;
             }
